@@ -15,10 +15,10 @@ export default function LineChart(){
     const [selectedMonth, setSelectedMonth] = useState('May-June');
 
     useEffect(() => {
-        axios.get('https://react-dashboard-bhaktij338.vercel.app/'+`${selectedMonth}`).then(response => {
+        axios.get('http://localhost:5000/'+`${selectedMonth}`).then(response => {
+          console.log(response);
           const fetchedData = response.data; 
-          console.log(fetchedData);
-    
+          
           const updatedChartData = {
             labels: ["", "week1", "week2", "week3", "week4", ""],
             datasets: [
