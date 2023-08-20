@@ -15,8 +15,8 @@ export default function LineChart(){
     const [selectedMonth, setSelectedMonth] = useState('May-June');
 
     useEffect(() => {
-        axios.get('/'+`${selectedMonth}`).then(response => {
-          console.log(response);
+        axios.get('/api/'+`${selectedMonth}`).then(response => {
+          console.log(response.data);
           const fetchedData = response.data; 
           
           const updatedChartData = {
