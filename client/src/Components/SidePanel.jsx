@@ -7,7 +7,7 @@ import hamburgerIcon from "../assets/hamburger.svg";
 
 export default function SidePanel() {
   return (
-    <div className="w-full  px-3 py-4 md:p-8 text-white grid content-between md:h-screen md:w-72 bg-black rounded-xl">
+    <div className="w-full  px-3 py-4 md:p-8 text-white grid content-between md:h-screen md:w-72 bg-black md:rounded-xl">
       <div className="flex-none items-center md:items-start md:flex-col justify-between">
 
         <div className="flex items-center justify-between">
