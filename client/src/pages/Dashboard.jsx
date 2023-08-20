@@ -1,8 +1,8 @@
 import SidePanel from '../Components/SidePanel'
 import LineChart from '../Components/LineChart'
-import ProductCard from '../Components/productCard'
+import ProductCard from '../Components/ProductCard'
 import ScheduleCard from '../Components/ScheduleCard'
-import TopPanel from '../Components/topPanel'
+import TopPanel from '../Components/TopPanel'
 import ItemsDiv from '../Components/ItemsDiv'
 
 export default function Dashboard(){
