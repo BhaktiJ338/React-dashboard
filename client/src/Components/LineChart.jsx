@@ -15,7 +15,7 @@ export default function LineChart(){
     const [selectedMonth, setSelectedMonth] = useState('May-June');
 
     useEffect(() => {
-        axios.get('https://react-dashboard-bhaktij338.vercel.app/'+`${selectedMonth}`).then(response => {
+        axios.get(`${import.meta.env.VITE_API_BASE_URL}`+`${selectedMonth}`).then(response => {
           console.log(response);
           const fetchedData = response.data; 
           
